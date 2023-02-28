@@ -50,8 +50,8 @@ The analysis aims to answer the following questions:
 
 ## Data Sources
 We had two main data sources:
-1. The United Nations' *International Migrant Stock 2020* database. This database gathers data every 5 years from 234 countries' population censuses in order to determine the number of migrants in each country. 
-2. The United States Government's *International Database*, which gathers data on 32 sociodemographic variables, per country and year. 
+1. The United Nations' [*International Migrant Stock 2020*](https://www.un.org/development/desa/pd/content/international-migrant-stock) database. This database gathers data every 5 years from 234 countries' population censuses in order to determine the number of migrants in each country. 
+2. The United States Government's [*International Database*](https://www.census.gov/programs-surveys/international-programs/about/idb.html), which gathers data on 32 sociodemographic variables, per country and year. 
 
 Regarding the second data source, we only selected 10 of the 32 available variables: 
 * Population(#)
@@ -66,7 +66,7 @@ Regarding the second data source, we only selected 10 of the 32 available variab
 * Net Migration Rate. 
 
 For the Data Preprocessing step, we also used the following data source:
-* The *ISO-3166-Countries-with-Regional-Codes* Github repository by @lukes, which includes ISO 3166-1 country lists merged with their UN Geoscheme regional codes.
+* The [*ISO-3166-Countries-with-Regional-Codes*](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes) Github repository by @lukes, which includes ISO 3166-1 country lists merged with their UN Geoscheme regional codes.
 
 ---
 
