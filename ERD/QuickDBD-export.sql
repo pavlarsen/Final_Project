@@ -15,12 +15,11 @@ CREATE TABLE [Migrant_Population] (
     [Migrant_Male_Population] int  NOT NULL ,
     [Migrant_Femaile_Population] int  NOT NULL ,
     CONSTRAINT [PK_Migrant_Population] PRIMARY KEY CLUSTERED (
-        [Country_ID] ASC,[Country_ID_Alpha] ASC
+        [Country_ID_Alpha] ASC
     )
 )
 
 CREATE TABLE [Country_Data] (
-    [Country_ID] int  NOT NULL ,
     [Country_ID_Alpha] varchar  NOT NULL ,
     [Country_Name] varchar  NOT NULL ,
     [Year] int  NOT NULL ,
@@ -36,13 +35,13 @@ CREATE TABLE [Country_Data] (
     [Net_Migration_Rate] float  NOT NULL ,
     [Migration_Flag] bool  NOT NULL ,
     CONSTRAINT [PK_Country_Data] PRIMARY KEY CLUSTERED (
-        [Country_ID] ASC,[Country_ID_Alpha] ASC
+        [Country_ID_Alpha] ASC
     )
 )
 
-ALTER TABLE [Migrant_Population] WITH CHECK ADD CONSTRAINT [FK_Migrant_Population_Country_ID_Country_ID_Alpha_Year] FOREIGN KEY([Country_ID], [Country_ID_Alpha], [Year])
-REFERENCES [Country_Data] ([Country_ID], [Country_ID_Alpha], [Year])
+ALTER TABLE [Migrant_Population] WITH CHECK ADD CONSTRAINT [FK_Migrant_Population_Country_ID_Alpha_Year] FOREIGN KEY([Country_ID_Alpha], [Year])
+REFERENCES [Country_Data] ([Country_ID_Alpha], [Year])
 
-ALTER TABLE [Migrant_Population] CHECK CONSTRAINT [FK_Migrant_Population_Country_ID_Country_ID_Alpha_Year]
+ALTER TABLE [Migrant_Population] CHECK CONSTRAINT [FK_Migrant_Population_Country_ID_Alpha_Year]
 
 COMMIT TRANSACTION QUICKDBD
