@@ -104,10 +104,6 @@ Country_ID,Country_ID_Alpha,Country_Name,Year,Total_Migrant_Population,Migrant_M
 706,SO,   Somalia,2010,48106,25213,22893
 706,SO,   Somalia,2015,40990,21584,19406
 706,SO,   Somalia,2020,58590,32285,26305
-728,SS,   South Sudan,1990,..,..,..
-728,SS,   South Sudan,1995,..,..,..
-728,SS,   South Sudan,2000,..,..,..
-728,SS,   South Sudan,2005,..,..,..
 728,SS,   South Sudan,2010,230732,119106,111626
 728,SS,   South Sudan,2015,844112,430944,413168
 728,SS,   South Sudan,2020,882252,443405,438847
@@ -461,13 +457,6 @@ Country_ID,Country_ID_Alpha,Country_Name,Year,Total_Migrant_Population,Migrant_M
 446,MO,"   China, Macao SAR*",2010,318506,146407,172099
 446,MO,"   China, Macao SAR*",2015,376066,174589,201477
 446,MO,"   China, Macao SAR*",2020,403490,187321,216169
-158,TW,"   China, Taiwan Province of China*",1990,..,..,..
-158,TW,"   China, Taiwan Province of China*",1995,..,..,..
-158,TW,"   China, Taiwan Province of China*",2000,..,..,..
-158,TW,"   China, Taiwan Province of China*",2005,..,..,..
-158,TW,"   China, Taiwan Province of China*",2010,..,..,..
-158,TW,"   China, Taiwan Province of China*",2015,..,..,..
-158,TW,"   China, Taiwan Province of China*",2020,..,..,..
 408,KP,   Dem. People's Republic of Korea,1990,34103,17393,16710
 408,KP,   Dem. People's Republic of Korea,1995,35143,17562,17581
 408,KP,   Dem. People's Republic of Korea,2000,36183,17731,18452
@@ -979,10 +968,6 @@ Country_ID,Country_ID_Alpha,Country_Name,Year,Total_Migrant_Population,Migrant_M
 470,MT,   Malta,2010,33008,17118,15890
 470,MT,   Malta,2015,52642,28332,24310
 470,MT,   Malta,2020,114760,66055,48705
-499,ME,   Montenegro,1990,..,..,..
-499,ME,   Montenegro,1995,..,..,..
-499,ME,   Montenegro,2000,..,..,..
-499,ME,   Montenegro,2005,..,..,..
 499,ME,   Montenegro,2010,78512,31639,46873
 499,ME,   Montenegro,2015,71719,28178,43541
 499,ME,   Montenegro,2020,70999,27995,43004
@@ -1126,13 +1111,6 @@ Country_ID,Country_ID_Alpha,Country_Name,Year,Total_Migrant_Population,Migrant_M
 52,BB,   Barbados,2010,32825,14746,18079
 52,BB,   Barbados,2015,34475,15488,18987
 52,BB,   Barbados,2020,34869,15668,19201
-535,BQ,"   Bonaire, Sint Eustatius and Saba*",1990,13010,..,..
-535,BQ,"   Bonaire, Sint Eustatius and Saba*",1995,15101,..,..
-535,BQ,"   Bonaire, Sint Eustatius and Saba*",2000,14387,..,..
-535,BQ,"   Bonaire, Sint Eustatius and Saba*",2005,14399,..,..
-535,BQ,"   Bonaire, Sint Eustatius and Saba*",2010,20941,..,..
-535,BQ,"   Bonaire, Sint Eustatius and Saba*",2015,24571,..,..
-535,BQ,"   Bonaire, Sint Eustatius and Saba*",2020,26221,..,..
 92,VG,   British Virgin Islands*,1990,8035,4126,3909
 92,VG,   British Virgin Islands*,1995,10046,5034,5012
 92,VG,   British Virgin Islands*,2000,12958,6386,6572
@@ -1154,10 +1132,6 @@ Country_ID,Country_ID_Alpha,Country_Name,Year,Total_Migrant_Population,Migrant_M
 192,CU,   Cuba,2010,7373,3232,4141
 192,CU,   Cuba,2015,4649,2027,2622
 192,CU,   Cuba,2020,3024,1312,1712
-531,CW,   Curaçao*,1990,..,..,..
-531,CW,   Curaçao*,1995,..,..,..
-531,CW,   Curaçao*,2000,..,..,..
-531,CW,   Curaçao*,2005,..,..,..
 531,CW,   Curaçao*,2010,34630,14196,20434
 531,CW,   Curaçao*,2015,37611,15467,22144
 531,CW,   Curaçao*,2020,57210,24958,32252
@@ -1224,13 +1198,6 @@ Country_ID,Country_ID_Alpha,Country_Name,Year,Total_Migrant_Population,Migrant_M
 630,PR,   Puerto Rico*,2010,304969,142939,162030
 630,PR,   Puerto Rico*,2015,280494,130916,149578
 630,PR,   Puerto Rico*,2020,247132,114868,132264
-652,BL,   Saint Barthélemy*,1990,..,..,..
-652,BL,   Saint Barthélemy*,1995,..,..,..
-652,BL,   Saint Barthélemy*,2000,..,..,..
-652,BL,   Saint Barthélemy*,2005,..,..,..
-652,BL,   Saint Barthélemy*,2010,..,..,..
-652,BL,   Saint Barthélemy*,2015,..,..,..
-652,BL,   Saint Barthélemy*,2020,..,..,..
 659,KN,   Saint Kitts and Nevis,1990,3210,1642,1568
 659,KN,   Saint Kitts and Nevis,1995,4248,2196,2052
 659,KN,   Saint Kitts and Nevis,2000,5871,3068,2803
@@ -1245,13 +1212,6 @@ Country_ID,Country_ID_Alpha,Country_Name,Year,Total_Migrant_Population,Migrant_M
 662,LC,   Saint Lucia,2010,9050,4377,4673
 662,LC,   Saint Lucia,2015,8673,4179,4494
 662,LC,   Saint Lucia,2020,8338,4004,4334
-663,MF,   Saint Martin (French part)*,1990,..,..,..
-663,MF,   Saint Martin (French part)*,1995,..,..,..
-663,MF,   Saint Martin (French part)*,2000,..,..,..
-663,MF,   Saint Martin (French part)*,2005,..,..,..
-663,MF,   Saint Martin (French part)*,2010,..,..,..
-663,MF,   Saint Martin (French part)*,2015,..,..,..
-663,MF,   Saint Martin (French part)*,2020,..,..,..
 670,VC,   Saint Vincent and the Grenadines,1990,3970,1928,2042
 670,VC,   Saint Vincent and the Grenadines,1995,4135,2011,2124
 670,VC,   Saint Vincent and the Grenadines,2000,4307,2099,2208
@@ -1259,9 +1219,6 @@ Country_ID,Country_ID_Alpha,Country_Name,Year,Total_Migrant_Population,Migrant_M
 670,VC,   Saint Vincent and the Grenadines,2010,4569,2302,2267
 670,VC,   Saint Vincent and the Grenadines,2015,4637,2355,2282
 670,VC,   Saint Vincent and the Grenadines,2020,4738,2443,2295
-534,SX,   Sint Maarten (Dutch part)*,1990,..,..,..
-534,SX,   Sint Maarten (Dutch part)*,1995,..,..,..
-534,SX,   Sint Maarten (Dutch part)*,2000,..,..,..
 534,SX,   Sint Maarten (Dutch part)*,2005,13099,6285,6814
 534,SX,   Sint Maarten (Dutch part)*,2010,26203,12570,13633
 534,SX,   Sint Maarten (Dutch part)*,2015,27295,13077,14218
