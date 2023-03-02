@@ -35,8 +35,7 @@ The analysis aims to answer the following questions:
 
 
 ## Technology Used
-In order organize and structure Data, we find our way on Google Colab so everyone could work on the code. 
-We also used different databases to explore our results and finally we used csv files to upload everything into Hithub. 
+In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. 
 ...
 
 
@@ -44,18 +43,20 @@ We also used different databases to explore our results and finally we used csv 
 
 
 ## Project Steps
-...
-
+1. Theme and database selection
+2. Data preprocessing
+3. Loading the data into SQL
 
 ---
 
 
 ## Data Sources
 We had two main data sources:
-1. The United Nations' [*International Migrant Stock 2020*](https://www.un.org/development/desa/pd/content/international-migrant-stock) database. This database gathers data every 5 years from 234 countries' population censuses in order to determine the number of migrants in each country. 
-2. The United States Government's [*International Database*](https://www.census.gov/programs-surveys/international-programs/about/idb.html), which gathers data on 32 sociodemographic variables, per country and year. 
+1. The [*ISO-3166-Countries-with-Regional-Codes*](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes) Github repository by @lukes, which includes ISO 3166-1 country lists merged with their UN Geoscheme regional codes.
+2. The United Nations' [*International Migrant Stock 2020*](https://www.un.org/development/desa/pd/content/international-migrant-stock) database. This database gathers data every 5 years from 234 countries' population censuses in order to determine the number of migrants in each country. 
+3. The United States Government's [*International Database*](https://www.census.gov/programs-surveys/international-programs/about/idb.html), which gathers data on 32 sociodemographic variables, per country and year. 
 
-Regarding the second data source, we only selected 10 of the 32 available variables: 
+Regarding the third data source, we only selected 10 of the 32 available variables: 
 * Population(#)
 * Annual Growth Rate (%)
 * Area in Square Kilometers
@@ -67,15 +68,12 @@ Regarding the second data source, we only selected 10 of the 32 available variab
 * Crude Death Rate (per 1,000 people)
 * Net Migration Rate. 
 
-For the Data Preprocessing step, we also used the following data source:
-* The [*ISO-3166-Countries-with-Regional-Codes*](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes) Github repository by @lukes, which includes ISO 3166-1 country lists merged with their UN Geoscheme regional codes.
 
 ---
 
 
 ## Data Preprocessing
-...
-
+All the databases we used needed to be cleaned and transformed before being loaded into SQL. Thus, we loaded each of them into Google Colab Notebooks (look for the "data_preprocessing" notebooks in this repository) in order to perform this preprocessing. For each of the tables, we dropped the rows and columns we wouldn't use, checked for NaN and null values, as well as the data types for each column. After this, we transformed our tables into three separate CSV files: "Country_Codes.csv", "Migrant_Population_Final.csv" and "Country_Data_Final.csv"
 
 ---
 
