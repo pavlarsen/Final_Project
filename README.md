@@ -36,8 +36,6 @@ The analysis aims to answer the following questions:
 
 ## Technology Used
 In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. 
-...
-
 
 ---
 
@@ -73,7 +71,7 @@ Regarding the third data source, we only selected 10 of the 32 available variabl
 
 
 ## Data Preprocessing
-All the databases we used needed to be cleaned and transformed before being loaded into SQL. Thus, we loaded each of them into Google Colab Notebooks (look for the "data_preprocessing" notebooks in this repository) in order to perform this preprocessing. For each of the tables, we dropped the rows and columns we wouldn't use, checked for NaN and null values, as well as the data types for each column. After this, we transformed our tables into three separate CSV files: "Country_Codes.csv", "Migrant_Population_Final.csv" and "Country_Data_Final.csv"
+All the databases we used needed to be cleaned and transformed before being loaded into SQL. Thus, we loaded each of them into Google Colab Notebooks (look for the "data_preprocessing" notebooks in this repository) in order to perform this preprocessing. For each of the tables, we dropped the rows and columns we wouldn't use, checked for NaN and null values, as well as the data types for each column. After this, we transformed our tables into three separate CSV files: "Country_Codes.csv", "Migrant_Population_Final.csv" and "Country_Data_Final.csv".
 
 ---
 
