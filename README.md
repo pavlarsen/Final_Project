@@ -35,6 +35,8 @@ The analysis aims to answer the following questions:
 
 
 ## Technology Used
+In order organize and structure Data, we find our way on Google Colab so everyone could work on the code. 
+We also used different databases to explore our results and finally we used csv files to upload everything into Hithub. 
 ...
 
 
