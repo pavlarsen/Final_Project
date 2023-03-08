@@ -121,6 +121,37 @@ These results seemed just right for us, as they indicated that the model could b
 
 ![image](https://user-images.githubusercontent.com/113153777/223564037-eb686f65-e239-44da-921c-51b6ebed4cab.png)
 
+**Restructure and compare:**
+
+7. As we already finished, we tend to gain mora accuracy in our code, so we test a model without any migration data and just adding country data.
+
+Now again we created our features and our target:
+
+![Screenshot 2023-03-07 at 20 24 21](https://user-images.githubusercontent.com/114035736/223603398-7d12ca0f-b25d-42f6-929d-286eb501d039.png)
+
+Split & Scale
+
+![Screenshot 2023-03-07 at 20 26 15](https://user-images.githubusercontent.com/114035736/223603663-35fabfe1-6198-4112-add7-f12ced67be22.png)
+
+We also decided to go with *Random Forest Classifier**
+
+![Screenshot 2023-03-07 at 20 28 47](https://user-images.githubusercontent.com/114035736/223604075-f5ad86ad-9c58-4634-915b-3d085810122a.png)
+
+**So we came to these results**
+
+**Confusion Matrix:**
+
+![Screenshot 2023-03-07 at 20 31 32](https://user-images.githubusercontent.com/114035736/223604566-f0d6ba93-45a9-4c7f-9b86-1e8248682ca9.png)
+
+**Accuracy Score : 0.88**
+![Screenshot 2023-03-07 at 20 33 07](https://user-images.githubusercontent.com/114035736/223604779-3375fb14-7b13-418a-b42c-129678fa4ae1.png)
+
+**Classification Report**
+![Screenshot 2023-03-07 at 20 33 51](https://user-images.githubusercontent.com/114035736/223604884-ec173308-6425-4197-8a02-2063e992f671.png)
+
+Comparing both results, we think we achieve a more accurate code by 0.02% just by clearing migration data. 
+
+8. Calculating the features' importance, we found that our bottom features changed to 'population_density', 'total_country_population' & 'crude_death_rate'.
 ---
 
 
