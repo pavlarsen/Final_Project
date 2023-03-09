@@ -1,11 +1,9 @@
 # Final Project: The Migration Phenomenon and Machine Learning
 
 ## Project Overview
-When we think about Data Analysis and Machine Learning, we tipically find it useful for business solutions. However, both have an enormous potential to help solve a wide range of issues, such as those that fall into the category of 'social phenomena'. 
+When we think about Data Analysis and Machine Learning, we tipically find it useful for business solutions. However, both have an enormous potential to help solve a wide range of issues, such as those that fall into the category of 'social phenomena'. Through this project, we aimed at coming up with a machine learning solution for an issue that is included in that very category: **migration**. 
 
-Through this project, we aimed at coming up with a machine learning solution for an issue that is included in that very category: **migration**. 
-
-The main purpose of the project was to analyze two databases, creating a Machine Learning Model that would help us predict if a country's *Net Migration Rate* (the number of migrants they receive vs. the number of migrants they produce) fell into one of two categories: **Positive or Negative**. 
+The main purpose of the project was to analyze two datasets, build a database and create a Machine Learning Model that would help us predict if a country's *Net Migration Rate* (the number of migrants they receive vs. the number of migrants they produce) fell into one of two categories: **Positive or Negative**. 
 
 ---
 ## Relevance of the Project
@@ -35,7 +33,7 @@ The analysis aims to answer the following questions:
 
 
 ## Technology Used
-In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. 
+In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. As for the Machine Learning algorithm two different libraries were used to achieve the goal: Imbalanced Learn and Tensorflow. From each of these libraries a model was used and trained as to have a comparisson and a optimized model.
 
 ---
 
@@ -79,7 +77,11 @@ All the databases we used needed to be cleaned and transformed before being load
 
 
 ## SQL
-After completing the Data Preprocessing step, we loaded our tables into PosgreSQL (you can find the schema in the 'SQL' folder). Before doing this, however, we had some minor data issues that we had to fix, such as different ID names for a few countries. Fortunately, we were able to solve these issues quickly.
+After completing the Data Preprocessing step, we loaded our tables into PosgreSQL (you can find the schema in the 'SQL' folder). A PostgreSQL database was created as to save all the preprocessed data intact for future reference if needed and to verify that our queries ran successfully. First we had to write a query to create the schema of the Database with help of the ERD. So for this part the table "Country Codes" was the key piece in order to have a table with a primary key ("Country_ID_Alpha") that can be referenced by other tables, in our case the preprocessed data, so for this table it was necessary to create also a csv file which can be found next to the other preprocessed documents. Next, creating the tables that mimic the structure of the preprocessed csv files was easy enough. 
+
+![Captura de pantalla (1059)](https://user-images.githubusercontent.com/110573146/224176755-649df649-5297-4962-8e59-31919d551a2c.png)
+
+Once the the schema was done all that was left was to import the data, but before doing this, however, we had some minor data issues that we had to fix, such as different ID names for a few countries and a primary key missing in "Country Codes". Fortunately, we were able to solve these issues quickly and continue with the import.
 
 Once the tables were uploaded successfully to PgAdmin, we created a new table that would join the two main tables (country data and migrant population). For this step we used the following schema:
 
