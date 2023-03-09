@@ -1,4 +1,4 @@
-# Final Project
+# Final Project: The Migration Phenomenon and Machine Learning
 
 ## Project Overview
 When we think about Data Analysis and Machine Learning, we tipically find it useful for business solutions. However, both have an enormous potential to help solve a wide range of issues, such as those that fall into the category of 'social phenomena'. 
