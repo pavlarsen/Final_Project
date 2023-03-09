@@ -35,7 +35,7 @@ The analysis aims to answer the following questions:
 
 
 ## Technology Used
-In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. 
+In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. 
 
 ---
 
@@ -77,7 +77,12 @@ All the databases we used needed to be cleaned and transformed before being load
 
 
 ## SQL
-TODO: Explain the data loading process, as well as the steps we went through in order to join the two main tables. 
+TODO: Explain the data loading process
+Once the tables were uploaded successfully to PgAdmin, we created a new table what would join the two main tables (country data and migrant population). For this step we use the following squema:
+
+![Captura de pantalla 2023-03-08 a la(s) 20 12 38](https://user-images.githubusercontent.com/113866707/223898074-93964fe9-f0ab-4afa-ac2c-755cde0a5d96.png)
+
+The final output was the new "migration data" table which we used for the Machine Learning algorithm.
 
 
 ---
