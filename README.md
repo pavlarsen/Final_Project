@@ -77,13 +77,13 @@ All the databases we used needed to be cleaned and transformed before being load
 
 
 ## SQL
-TODO: Explain the data loading process
+After completing the Data Preprocessing step, we loaded our tables into PosgreSQL (you can find the schema in the 'SQL' folder). Before doing this, however, we had some minor data issues that we had to fix, such as different ID names for a few countries. Fortunately, we were able to solve these issues quickly.
 
-Once the tables were uploaded successfully to PgAdmin, we created a new table what would join the two main tables (country data and migrant population). For this step we use the following squema:
+Once the tables were uploaded successfully to PgAdmin, we created a new table that would join the two main tables (country data and migrant population). For this step we used the following schema:
 
 ![Captura de pantalla 2023-03-08 a la(s) 20 12 38](https://user-images.githubusercontent.com/113866707/223898074-93964fe9-f0ab-4afa-ac2c-755cde0a5d96.png)
 
-The final output was the new "migration data" table which we used for the Machine Learning algorithm.
+The final output was the new "Migration_Data" table which we used for the Machine Learning algorithm.
 
 
 ---
@@ -95,19 +95,9 @@ In order to build our machine learning model, we used the 'Migration_Data.csv' t
 
 1. After importing the DataFrame and reordering its columns, we decided to change the values of our 'migration_flag' column. This column contains the data that states if a country has a positive or negative Net Migration Rate for a given year. So, instead of having 't' (positive) and 'f' (negative) as our boolean values, we replaced them with 1 (true) and 0 (false). 
 
-2. After this, we first made sure that all of our columns had the required data type. Then, we started the process of splitting our data into training and testing. For this, we created our features (creating dummies for our string values, and dropping our target column) and our target (the 'migration_flag' column). 
+2. After this, we first made sure that all of our columns had the required data type. Then, we started the process of splitting our data into training and testing. For this, we created our features (creating dummies for our string values, and dropping our target column) and our target (the 'migration_flag' column). We made sure to have balanced values for each category in the 'migration_flag' column, and split our data after that. We also decided to scale the data because the values for our columns had very different dimensions. 
 
-![image](https://user-images.githubusercontent.com/113153777/223560456-9f4bfcda-d94e-414f-805c-112e640fc07c.png)
-
-3. We made sure to have balanced values for each category in the 'migration_flag' column, and split our data after that. We also decided to scale the data because the values for our columns had very different dimensions. 
-
-![image](https://user-images.githubusercontent.com/113153777/223561006-4b47937b-f495-4f6b-84e4-5f9d266e3ef8.png)
-
-4. For the actual model, we decided to use the **Random Forest Classifier**, since this seems to be one of the most efficient types of machine learning models. 
-
-![image](https://user-images.githubusercontent.com/113153777/223561338-7158c349-f7eb-4f92-ac4c-fbcf57dd2558.png)
-
-5. The first results of our model indicated that it was **overfitting**, since we had an accuracy score of 100%. Thus, we decided to look at the feature importances, and tried dropping some columns with the purpose of improving our model. For this, we dropped the 'Year' and 'Country_Area' columns (which had the lowest ranking of importance), as well as the 'Net_Migration_Rate' column (which was the most important column). After doing this, our model improved significantly, and we obtained the following results: 
+4. For the actual model, we decided to implement and compare the **Random Forest Classifier** and a **Deep Learning Model** since they seem the most efficient types of machine learning models. First, we tried using the Random Forest Classifier. The first results of this model indicated that it was **overfitting**, since we had an accuracy score of 100%. Thus, we decided to look at the feature importances, and tried dropping some columns with the purpose of improving our model. For this, we dropped the 'Year' and 'Country_Area' columns (which had the lowest ranking of importance), as well as the 'Net_Migration_Rate' column (which was the most important column). After doing this, our model improved significantly, and we obtained the following results: 
 
 **Confusion Matrix:**
 
@@ -121,43 +111,37 @@ In order to build our machine learning model, we used the 'Migration_Data.csv' t
 
 ![image](https://user-images.githubusercontent.com/113153777/223563348-7868c1a7-daa5-4b76-9f2f-4c151122b4c5.png)
 
-These results seemed just right for us, as they indicated that the model could be flexible for predictions based on new data. 
-
-6. Finally, we calculated the feature importances for our modified model. According to our code, the three most important features for the model are 'Annual Growth Rate', 'Infant Mortality Rate', and 'Total Fertility Rate'.
+We also calculated the feature importances for our modified model. According to our code, the three most important features for the model are 'Annual Growth Rate', 'Infant Mortality Rate', and 'Total Fertility Rate'.
 
 ![image](https://user-images.githubusercontent.com/113153777/223564037-eb686f65-e239-44da-921c-51b6ebed4cab.png)
 
-**Restructure and compare:**
+5. When it came to our Deep Learning Model, we decided to use two layers with 16 and 8 nodes, respectively, as well as the Tanh activation function and a total of 100 epochs. After running the model, we had the following Loss and Accuracy results: 
 
-7. As we already finished, we tend to gain mora accuracy in our code, so we test a model without any migration data and just adding country data.
+![image](https://user-images.githubusercontent.com/113153777/223900996-12478f52-be83-46e2-b0d5-a8e86f7e5d67.png)
 
-Now again we created our features and our target:
+6. After finishing these steps, we were curious to see if these two models would still work well if we removed all the migration data, taking into account that this is typically the information that is more difficult to find. So, we tested both models only using the country data. Again, we created our features and our target:
 
 ![Screenshot 2023-03-07 at 20 24 21](https://user-images.githubusercontent.com/114035736/223603398-7d12ca0f-b25d-42f6-929d-286eb501d039.png)
 
-Split & Scale
-
-![Screenshot 2023-03-07 at 20 26 15](https://user-images.githubusercontent.com/114035736/223603663-35fabfe1-6198-4112-add7-f12ced67be22.png)
-
-We also decided to go with *Random Forest Classifier**
-
-![Screenshot 2023-03-07 at 20 28 47](https://user-images.githubusercontent.com/114035736/223604075-f5ad86ad-9c58-4634-915b-3d085810122a.png)
-
-**So we came to these results**
+7. For the **Random Forest Classifier** we came to these results:
 
 **Confusion Matrix:**
 
 ![Screenshot 2023-03-07 at 20 31 32](https://user-images.githubusercontent.com/114035736/223604566-f0d6ba93-45a9-4c7f-9b86-1e8248682ca9.png)
 
 **Accuracy Score : 0.88**
+
 ![Screenshot 2023-03-07 at 20 33 07](https://user-images.githubusercontent.com/114035736/223604779-3375fb14-7b13-418a-b42c-129678fa4ae1.png)
 
 **Classification Report**
+
 ![Screenshot 2023-03-07 at 20 33 51](https://user-images.githubusercontent.com/114035736/223604884-ec173308-6425-4197-8a02-2063e992f671.png)
 
-Comparing both results, we think we achieve a more accurate code by 0.02% just by clearing migration data. 
+Comparing both results, we think we achieved a more accurate model (0.02%) just by clearing migration data. And, calculating the features' importance, we found that our bottom features changed to 'population_density', 'total_country_population' & 'crude_death_rate'.
 
-8. Calculating the features' importance, we found that our bottom features changed to 'population_density', 'total_country_population' & 'crude_death_rate'.
+8. For our ""Deep Learning Model"", we also saw an improvement in score, as we achieved the following results:
+![image](https://user-images.githubusercontent.com/113153777/223901112-b1b20d3b-b83e-4adf-bcf6-781b945e92c1.png)
+
 ---
 
 
