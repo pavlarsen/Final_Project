@@ -78,6 +78,7 @@ All the databases we used needed to be cleaned and transformed before being load
 
 ## SQL
 TODO: Explain the data loading process
+
 Once the tables were uploaded successfully to PgAdmin, we created a new table what would join the two main tables (country data and migrant population). For this step we use the following squema:
 
 ![Captura de pantalla 2023-03-08 a la(s) 20 12 38](https://user-images.githubusercontent.com/113866707/223898074-93964fe9-f0ab-4afa-ac2c-755cde0a5d96.png)
