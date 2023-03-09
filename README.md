@@ -41,9 +41,11 @@ In order to organize and structure the data, we decided to use Google Colab so t
 
 
 ## Project Steps
-1. Theme and database selection
-2. Data preprocessing
-3. Loading the data into SQL
+1. Theme and database selection.
+2. Data preprocessing.
+3. Loading the data into SQL and joining our tables.
+4. Constructing our Machine Learning Model. 
+5. Data analysis and visualization. 
 
 ---
 
