@@ -35,7 +35,7 @@ The analysis aims to answer the following questions:
 
 ## Technology Used
 
-In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. As for the Machine Learning algorithm two different libraries were used to achieve the goal: Imbalanced Learn and Tensorflow. From each of these libraries a model was used and trained as to have a comparisson and a optimized model.
+In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. Regarding the Machine Learning algorithm, two different libraries were used to achieve the goal: Imbalanced Learn and Tensorflow. From each of these libraries a model was used and trained with the purpose of having a comparison, as well as an optimized model.
 
 
 ---
@@ -83,7 +83,7 @@ All the databases we used needed to be cleaned and transformed before being load
 
 
 ## SQL
-After completing the Data Preprocessing step, we loaded our tables into PosgreSQL (you can find the schema in the 'SQL' folder). A PostgreSQL database was created as to save all the preprocessed data intact for future reference if needed and to verify that our queries ran successfully. First we had to write a query to create the schema of the Database with help of the ERD. So for this part the table "Country Codes" was the key piece in order to have a table with a primary key ("Country_ID_Alpha") that can be referenced by other tables, in our case the preprocessed data, so for this table it was necessary to create also a csv file which can be found next to the other preprocessed documents. Next, creating the tables that mimic the structure of the preprocessed csv files was easy enough. 
+After completing the Data Preprocessing step, we loaded our tables into PosgreSQL (you can find the schema in the 'SQL' folder). A PostgreSQL database was created as to save all the preprocessed data intact for future reference if needed and to verify that our queries ran successfully. First we had to write a query to create the schema of the Database with help of the ERD. For this part, the table "Country Codes" was the key piece in order to have a table with a primary key ("Country_ID_Alpha") that can be referenced by other tables (in our case the preprocessed data). For this table it was necessary to create also a csv file which can be found next to the other preprocessed documents. Next, creating the tables that mimic the structure of the preprocessed csv files was easy enough. 
 
 ![Captura de pantalla (1059)](https://user-images.githubusercontent.com/110573146/224176755-649df649-5297-4962-8e59-31919d551a2c.png)
 
@@ -152,16 +152,16 @@ Comparing both results, we think we achieved a more accurate model (0.02%) just 
 8. For our ""Deep Learning Model"", we also saw an improvement in score, as we achieved the following results:
 ![image](https://user-images.githubusercontent.com/113153777/223901112-b1b20d3b-b83e-4adf-bcf6-781b945e92c1.png)
 
-It was decided upon these two models because while investigating among the models it was often mentioned that both Random Forest and Deep Learning had the best overall accuracy score. So we decided to put this trait into action, we wanted to see the comparison. Another reason was the easy process of implementing the Random Forest and how fast it was to play around with as mentioned before by eliminating columns and running it again, while Deep learning took longer to implement and to run, also the computer power needed to run Deep learning models is far higher so it takes more time to train. In other words we wanted to see the performance difference between a easy to compute and program and low computer power model to a harder to program and high computer power as two alternatives that could fit most people around the world.    
+We decided to try these two models because while investigating this topic it was often mentioned that both Random Forest and Deep Learning had the best overall accuracy score. So, we decided to test this, as we wanted to see the comparison. Another reason was the easy process of implementing the Random Forest and how fast it was to play around with, as mentioned before, by eliminating columns and running it again. Deep learning, on the other and, took longer to implement and to run. Also, the computer power needed to run Deep learning models is far higher so it takes more time to train. In other words, we wanted to see the performance difference between an easy to compute and low computer power model and a harder to compute program that requires high computer power, both as alternatives that could fit most people around the world.    
 
 ---
 
 
 ## Dashboard
 
-In order to start working on the dashboard, we had to have our code already done to decide if it is better to compare date or just present our outcomes. As we are going to manage extended and comparative data, we have decided to go for Tableau because we found its visibility and features more suitable for the project.
+In order to start working on the dashboard, we had to have our complete code and decide if it was better to analyze our data through a previous programming language, or to just present our outcomes. As we are managing extended and comparative data, we decided to go for Tableau, since its visualization features are more suitable for the project.
 
-Seeking for more answers, we found that it is possible to compare migration data in order to predict how countries will behave. For example, comparing 'crude_birth_rate' with 'total_migrant_population' to answer which country is more likely to have a higher birth control rate or promote more benefits to make their people stay, therefore where will be a better place to invest. 
+Seeking more answers, we found that it is possible to analyze country data in order to predict how migration will occur worldwide. For example, comparing 'crude_birth_rate' with 'total_migrant_population' to answer which country is more likely to have a higher birth control rate or promote more benefits to make their people stay, and therefore will be a better place to invest. 
 
 ...
 
