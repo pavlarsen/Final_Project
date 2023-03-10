@@ -1,6 +1,7 @@
 # Final Project: The Migration Phenomenon and Machine Learning
 
 ## Project Overview
+
 When we think about Data Analysis and Machine Learning, we tipically find it useful for business solutions. However, both have an enormous potential to help solve a wide range of issues, such as those that fall into the category of 'social phenomena'. Through this project, we aimed at coming up with a machine learning solution for an issue that is included in that very category: **migration**. 
 
 The main purpose of the project was to analyze two datasets, build a database and create a Machine Learning Model that would help us predict if a country's *Net Migration Rate* (the number of migrants they receive vs. the number of migrants they produce) fell into one of two categories: **Positive or Negative**. 
@@ -33,17 +34,21 @@ The analysis aims to answer the following questions:
 
 
 ## Technology Used
+
 In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. As for the Machine Learning algorithm two different libraries were used to achieve the goal: Imbalanced Learn and Tensorflow. From each of these libraries a model was used and trained as to have a comparisson and a optimized model.
+
 
 ---
 
 
 ## Project Steps
+
 1. Theme and database selection.
 2. Data preprocessing.
 3. Loading the data into SQL and joining our tables.
 4. Constructing our Machine Learning Model. 
 5. Data analysis and visualization. 
+
 
 ---
 
@@ -71,6 +76,7 @@ Regarding the third data source, we only selected 10 of the 32 available variabl
 
 
 ## Data Preprocessing
+
 All the databases we used needed to be cleaned and transformed before being loaded into SQL. Thus, we loaded each of them into Google Colab Notebooks (look for the 'data_preprocessing' notebooks in this repository) in order to perform this preprocessing. For each of the tables, we dropped the rows and columns we wouldn't use, checked for NaN and null values, as well as the data types for each column. After this, we transformed our tables into three separate CSV files: 'Country_Codes.csv', 'Migrant_Population_Final.csv' and 'Country_Data_Final.csv'.
 
 ---
