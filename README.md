@@ -150,6 +150,11 @@ Comparing both results, we think we achieved a more accurate model (0.02%) just 
 
 
 ## Dashboard
+
+In order to start working on the dashboard, we had to have our code already done to decide if it is better to compare date or just present our outcomes. As we are going to manage extended and comparative data, we have decided to go for Tableau because we found its visibility and features more suitable for the project.
+
+Seeking for more answers, we found that it is possible to compare migration data in order to predict how countries will behave. For example, comparing 'crude_birth_rate' with 'total_migrant_population' to answer which country is more likely to have a higher birth control rate or promote more benefits to make their people stay, therefore where will be a better place to invest. 
+
 ...
 
 
