@@ -33,7 +33,7 @@ The analysis aims to answer the following questions:
 
 
 ## Technology Used
-In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. As for the Machine Learning algorithm two different libraries were used to achieve the goal: Imbalanced Learn and Tensorflow. From each of these libraries a model was used and trained as to have a comparisson and a optimized model.
+In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. As for the Machine Learning algorithm two different libraries were used to achieve the goal: Imbalanced Learn and Tensorflow. From each of these libraries a model was used and trained with the purpose of having a comparison and an optimized model.
 
 ---
 
@@ -151,9 +151,9 @@ Comparing both results, we think we achieved a more accurate model (0.02%) just 
 
 ## Dashboard
 
-In order to start working on the dashboard, we had to have our code already done to decide if it is better to compare date or just present our outcomes. As we are going to manage extended and comparative data, we have decided to go for Tableau because we found its visibility and features more suitable for the project.
+In order to start working on the dashboard, we had to have our complete code in order to decide if it is better to compare date or just present our outcomes. As we are managing extended and comparative data, we decided to use Tableau, since its visibility and features are more suitable for the project.
 
-Seeking for more answers, we found that it is possible to compare migration data in order to predict how countries will behave. For example, comparing 'crude_birth_rate' with 'total_migrant_population' to answer which country is more likely to have a higher birth control rate or promote more benefits to make their people stay, therefore where will be a better place to invest. 
+Seeking more answers, we found that it is possible to use country data to predict how migration will occur. For example, comparing 'crude_birth_rate' with 'total_migrant_population' to answer which country is more likely to have a higher birth control rate or promote more benefits to make their people stay, therefore where will be a better place to invest. 
 
 ...
 
