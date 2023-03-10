@@ -33,7 +33,7 @@ The analysis aims to answer the following questions:
 
 
 ## Technology Used
-In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. As for the Machine Learning algorithm two different libraries were used to achieve the goal: Imbalanced Learn and Tensorflow. From each of these libraries a model was used and trained with the purpose of having a comparison and an optimized model.
+In order to organize and structure the data, we decided to use Google Colab so that everyone could work on the code remotely. With the help of Python and the Pandas library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into Github. The raw data was then uploaded and manipulated in PgAdmin in order to join our different tables and being able to create a new table to be used for the Machine Learning process. As for the Machine Learning algorithm two different libraries were used to achieve the goal: Imbalanced Learn and Tensorflow. From each of these libraries a model was used and trained as to have a comparisson and a optimized model.
 
 ---
 
@@ -99,7 +99,7 @@ In order to build our machine learning model, we used the 'Migration_Data.csv' t
 
 1. After importing the DataFrame and reordering its columns, we decided to change the values of our 'migration_flag' column. This column contains the data that states if a country has a positive or negative Net Migration Rate for a given year. So, instead of having 't' (positive) and 'f' (negative) as our boolean values, we replaced them with 1 (true) and 0 (false). 
 
-2. After this, we first made sure that all of our columns had the required data type. Then, we started the process of splitting our data into training and testing. For this, we created our features (creating dummies for our string values, and dropping our target column) and our target (the 'migration_flag' column). We made sure to have balanced values for each category in the 'migration_flag' column, and split our data after that. We also decided to scale the data because the values for our columns had very different dimensions. 
+2. After this, we first made sure that all of our columns had the required data type. Then, we started the process of splitting our data into training and testing. For this, we created our features (creating dummies for our string values) and dropping our target column (the 'migration_flag' column). We made sure to have balanced values for each category in the 'migration_flag' column, and split our data after that. We also decided to scale the data because the values for our columns had very different dimensions. 
 
 4. For the actual model, we decided to implement and compare the **Random Forest Classifier** and a **Deep Learning Model** since they seem to be the most efficient types of machine learning models. First, we tried using the Random Forest Classifier. The first results of this model indicated that it was **overfitting**, since we had an accuracy score of 100%. Thus, we decided to look at the feature importances, and tried dropping some columns with the purpose of improving our model. For this, we dropped the 'Year' and 'Country_Area' columns (which had the lowest ranking of importance), as well as the 'Net_Migration_Rate' column (which was the most important column). After doing this, our model improved significantly, and we obtained the following results: 
 
@@ -146,14 +146,16 @@ Comparing both results, we think we achieved a more accurate model (0.02%) just 
 8. For our ""Deep Learning Model"", we also saw an improvement in score, as we achieved the following results:
 ![image](https://user-images.githubusercontent.com/113153777/223901112-b1b20d3b-b83e-4adf-bcf6-781b945e92c1.png)
 
+It was decided upon these two models because while investigating among the models it was often mentioned that both Random Forest and Deep Learning had the best overall accuracy score. So we decided to put this trait into action, we wanted to see the comparison. Another reason was the easy process of implementing the Random Forest and how fast it was to play around with as mentioned before by eliminating columns and running it again, while Deep learning took longer to implement and to run, also the computer power needed to run Deep learning models is far higher so it takes more time to train. In other words we wanted to see the performance difference between a easy to compute and program and low computer power model to a harder to program and high computer power as two alternatives that could fit most people around the world.    
+
 ---
 
 
 ## Dashboard
 
-In order to start working on the dashboard, we had to have our complete code in order to decide if it is better to compare date or just present our outcomes. As we are managing extended and comparative data, we decided to use Tableau, since its visibility and features are more suitable for the project.
+In order to start working on the dashboard, we had to have our code already done to decide if it is better to compare date or just present our outcomes. As we are going to manage extended and comparative data, we have decided to go for Tableau because we found its visibility and features more suitable for the project.
 
-Seeking more answers, we found that it is possible to use country data to predict how migration will occur. For example, comparing 'crude_birth_rate' with 'total_migrant_population' to answer which country is more likely to have a higher birth control rate or promote more benefits to make their people stay, therefore where will be a better place to invest. 
+Seeking for more answers, we found that it is possible to compare migration data in order to predict how countries will behave. For example, comparing 'crude_birth_rate' with 'total_migrant_population' to answer which country is more likely to have a higher birth control rate or promote more benefits to make their people stay, therefore where will be a better place to invest. 
 
 ...
 
