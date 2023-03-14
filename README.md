@@ -94,40 +94,6 @@ Once the tables were uploaded successfully to PgAdmin, we created a new table th
 
 The final output was the new "Migration_Data" table which we used for the Machine Learning algorithm.
 
-
----
-
-
-## Machine Learning Model
-
-In order to build our machine learning model, we used the 'Migration_Data.csv' table that was created through PosgreSQL. This table has all the data contained in our two main tables: 'Migrant_Population' and 'Country_Data'. The file named 'machine_learning_model.ipynb' contains the code we implemented for this model, where you'll be able to see the following process:
-
-1. After importing the DataFrame and reordering its columns, we decided to change the values of our 'migration_flag' column. This column contains the data that states if a country has a positive or negative Net Migration Rate for a given year. So, instead of having 't' (positive) and 'f' (negative) as our boolean values, we replaced them with 1 (true) and 0 (false). 
-
-2. After this, we first made sure that all of our columns had the required data type. Then, we started the process of splitting our data into training and testing. For this, we created our features (creating dummies for our string values) and dropping our target column (the 'migration_flag' column). We made sure to have balanced values for each category in the 'migration_flag' column, and split our data after that. We also decided to scale the data because the values for our columns had very different dimensions. 
-
-4. For the actual model, we decided to implement and compare the **Random Forest Classifier** and a **Deep Learning Model** since they seem to be the most efficient types of machine learning models. First, we tried using the Random Forest Classifier. The first results of this model indicated that it was **overfitting**, since we had an accuracy score of 100%. Thus, we decided to look at the feature importances, and tried dropping some columns with the purpose of improving our model. For this, we dropped the 'Year' and 'Country_Area' columns (which had the lowest ranking of importance), as well as the 'Net_Migration_Rate' column (which was the most important column). After doing this, our model improved significantly, and we obtained the following results: 
-
-**Confusion Matrix:**
-
-![image](https://user-images.githubusercontent.com/113153777/223563190-560ef787-2bb9-4671-b512-6356bd793957.png)
-
-**Accuracy Score: 0.87**
-
-![image](https://user-images.githubusercontent.com/113153777/223563267-43178ab7-f171-4f6d-ab54-a61642cdf73e.png)
-
-**Classification Report:**
-
-![image](https://user-images.githubusercontent.com/113153777/223563348-7868c1a7-daa5-4b76-9f2f-4c151122b4c5.png)
-
-We also calculated the feature importances for our modified model. According to our code, the three most important features for the model are 'Annual Growth Rate', 'Infant Mortality Rate', and 'Total Fertility Rate'.
-
-![image](https://user-images.githubusercontent.com/113153777/223564037-eb686f65-e239-44da-921c-51b6ebed4cab.png)
-
-5. When it came to our Deep Learning Model, we decided to use two layers with 16 and 8 nodes, respectively, as well as the Tanh activation function and a total of 100 epochs. After running the model, we had the following Loss and Accuracy results: 
-
-![image](https://user-images.githubusercontent.com/113153777/223900996-12478f52-be83-46e2-b0d5-a8e86f7e5d67.png)
-
 ---
 ## Machine Learning Model
 
