@@ -101,6 +101,8 @@ The final output was the new "Migration_Data" table which we used for the Machin
 
 ## Machine Learning Model
 
+We decided to try these two models because while investigating this topic it was often mentioned that both Random Forest and Deep Learning had the best overall accuracy score, and both are able to run not only regression but also classification tasks, if it is ever necessary. So, we decided to test this, as we wanted to see the comparison. Another reason was the easy process of implementing the Random Forest and how fast it was to play around with, as it will be mentioned next, by eliminating columns and running it again. As Random Forest works by constructing a multitude of decision trees and selecting a class through them, it corrects the habit of decision trees of overfitting. Deep learning, on the other hand, took longer to implement and to run. Also, the computer power needed to run Deep learning models is far higher so it takes more time to train. In other words, we wanted to see the performance difference between an easy to compute and low computer resource power model and a harder to compute program that requires high computer resources power, at the end both are alternatives that could fit most people around the world.   
+
 In order to build our machine learning model, we used the 'Migration_Data.csv' table that was created through PosgreSQL. This table has all the data contained in our two main tables: 'Migrant_Population' and 'Country_Data'. The file named 'machine_learning_model.ipynb' contains the code we implemented for this model, where you'll be able to see the following process:
 
 1. After importing the DataFrame and reordering its columns, we decided to change the values of our 'migration_flag' column. This column contains the data that states if a country has a positive or negative Net Migration Rate for a given year. So, instead of having 't' (positive) and 'f' (negative) as our boolean values, we replaced them with 1 (true) and 0 (false). 
@@ -152,8 +154,6 @@ Comparing both results, we think we achieved a more accurate model (0.02%) just 
 8. For our ""Deep Learning Model"", we also saw an improvement in score, as we achieved the following results:
 ![image](https://user-images.githubusercontent.com/113153777/223901112-b1b20d3b-b83e-4adf-bcf6-781b945e92c1.png)
 
-We decided to try these two models because while investigating this topic it was often mentioned that both Random Forest and Deep Learning had the best overall accuracy score. So, we decided to test this, as we wanted to see the comparison. Another reason was the easy process of implementing the Random Forest and how fast it was to play around with, as mentioned before, by eliminating columns and running it again. Deep learning, on the other and, took longer to implement and to run. Also, the computer power needed to run Deep learning models is far higher so it takes more time to train. In other words, we wanted to see the performance difference between an easy to compute and low computer power model and a harder to compute program that requires high computer power, both as alternatives that could fit most people around the world.    
-
 ---
 
 
@@ -170,7 +170,10 @@ Seeking more answers, we found that it is possible to analyze country data in or
 
 
 ## Results
-...
+
+For this results discussion it will only be considered the models with country data, as they are the ones that can predict values with less information and the information it does require is more accesible and easier to gather and also because the overall performance was better. 
+
+In the confussion Matrix we can see that there are far more true positives and true negatives than false values. The model predicted 131 true positives and failed in only 23, while it predicted 184 true negatives and failed 17 times, overall it is a great performance as most predictions were correct. This can be confirmed with the accuracy score as it is shown to be 0.8873 which is a great score as it tells that it correctly predicted 89 values of a 100. To make sure that the results were correct, the recall and precision are to be examined, so the classification report was constructed. In this case the f1 showed a high value, which tells there is a balance between recall and precision (0.9 for 0 and 0.87 for 1) and indeed the values for precision and recall for 0 and 1 were almost at the same level so the model can be describe to have both this features and not only one. One can trust that the model will predict the correct value and we can trust this prediction. 
 
 
 ---
