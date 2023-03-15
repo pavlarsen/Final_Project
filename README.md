@@ -197,4 +197,7 @@ In the confussion Matrix we can see that there are far more true positives and t
 
 
 ## Recommendations & Final Considerations
-...
+
+For this analysis, we were limited by the availability of general country data. Also our main datasources and overall census provide data with a frequency of 5 years. If population data and migration data could be available in a bi-annual basis, our model could be more robust for validating our performance. If only 5 year data were to be available, we would focus on gathering more histoic data in order to have more information from periods during social events (famines, pandemics, economic crashes, war).
+
+It is important to mention that recent events related to the COVID-19 pandemic, did in fact changed migration trends over the past 2 years with certain countries closing the borders and making it difficult for the transit of people.
