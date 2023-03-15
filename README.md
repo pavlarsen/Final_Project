@@ -166,12 +166,6 @@ As a last phase of our Machine Learning Model, we decided to test it with new co
 
 ![image](https://user-images.githubusercontent.com/113153777/225088083-1562fd05-419e-44ba-9571-cf8709002ce0.png)
 
-These results clearly show that our model doesn't work as well when it comes to new data. We think that this may be due to one or more of the following reasons:
-1. The models need to be trained with consistent yearly data, as opposed to 5-year data. 
-2. The models need more data in order to be properly trained. 
-3. More variables need to be added in order to accurately predict Net Migration Rate. 
-4. Migration patterns changed drastically after the COVID Health Crisis, which is why the models are not as accurate for 2022. 
-
 ---
 
 
