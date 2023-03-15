@@ -35,7 +35,7 @@ The analysis aims to answer the following questions:
 
 ## Technology Used
 
-In order to organize and structure the data, we decided to use **Google Colab** so that everyone could work on the code remotely. With the help of **Python** and the **Pandas** library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into **Github**. The raw data was then uploaded and manipulated in **PgAdmin** in order to join our different tables and being able to create a new table to be used for the Machine Learning process. Regarding the Machine Learning algorithm, two different libraries were used to achieve the goal: **Sci-kit Learn** and **Tensorflow**. From each of these libraries a model was used and trained with the purpose of having a comparison, as well as an optimized model. Finally, we created our presentation using **Google Slides** (you can find the presentation [here](https://docs.google.com/presentation/d/1YEEUVXrkc3YqLU0JmBTSGqidPod7oaibknMXZcI4lO8/edit?usp=sharing)) and our dashboard with the help of **Tableau** (which can be found here).
+In order to organize and structure the data, we decided to use **Google Colab** so that everyone could work on the code remotely. With the help of **Python** and the **Pandas** library, we cleaned and transformed the different databases. Finally, we exported the tables as csv files and uploaded everything into **Github**. The raw data was then uploaded and manipulated in **PgAdmin** in order to join our different tables and being able to create a new table to be used for the Machine Learning process. Regarding the Machine Learning algorithm, two different libraries were used to achieve the goal: **Sci-kit Learn** and **Tensorflow**. From each of these libraries a model was used and trained with the purpose of having a comparison, as well as an optimized model. Finally, we created our presentation using **Google Slides** (you can find the presentation [here](https://docs.google.com/presentation/d/1YEEUVXrkc3YqLU0JmBTSGqidPod7oaibknMXZcI4lO8/edit?usp=sharing)) and our dashboard with the help of **Tableau** (which can be found [here](https://public.tableau.com/views/Final_Project_V2_16789070562260/Final_Story?:language=es-ES&:display_count=n&:origin=viz_share_link)).
 
 ---
 
@@ -171,9 +171,12 @@ As a last phase of our Machine Learning Model, we decided to test it with new co
 
 ## Dashboard
 
-In order to start working on the dashboard, we had to have our complete code and decide if it was better to analyze our data through a previous programming language, or to just present our outcomes. As we are managing extended and comparative data, we decided to go for Tableau, since its visualization features are more suitable for the project.
+In order to start working on the dashboard, we had to have our complete code and decide if it was better to analyze our data through a previous programming language, or to just present our outcomes. As we managed extended and comparative data, we decided to go for Tableau, since its visualization features are more suitable for the project. The [dashboard](https://public.tableau.com/app/profile/arantxa.meza/viz/Final_Project_V2_16789070562260/Final_Story) features three pages with the following visualizations:
+1. A world map that classifies countries by their Net Migration Rate.
+2. Graphs with data on Total Migrant Population by Country, as well as Migrant Population divided by Gender and Country.
+3. A line graph with data on each country's top 3 features (according to our Machine Learning Model) and a Bubble Chart that compares Total Migrant Population and Life Expectancy at Birth by Country.
 
-Seeking more answers, we found that it is possible to analyze country data in order to predict how migration will occur worldwide. For example, comparing 'crude_birth_rate' with 'total_migrant_population' to answer which country is more likely to have a higher birth control rate or promote more benefits to make their people stay, and therefore will be a better place to invest. 
+![ezgif com-resize](https://user-images.githubusercontent.com/113153777/225465179-7e26e10a-2506-4f9a-b24d-6948f510abe9.gif)
 
 ---
 
