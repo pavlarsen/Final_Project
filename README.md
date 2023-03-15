@@ -168,18 +168,6 @@ As a last phase of our Machine Learning Model, we decided to test it with new co
 
 ---
 
-
-## Dashboard
-
-In order to start working on the dashboard, we had to have our complete code and decide if it was better to analyze our data through a previous programming language, or to just present our outcomes. As we managed extended and comparative data, we decided to go for Tableau, since its visualization features are more suitable for the project. The [dashboard](https://public.tableau.com/app/profile/arantxa.meza/viz/Final_Project_V2_16789070562260/Final_Story) features three pages with the following visualizations:
-1. A world map that classifies countries by their Net Migration Rate.
-2. Graphs with data on Total Migrant Population by Country, as well as Migrant Population divided by Gender and Country.
-3. A line graph with data on each country's top 3 features (according to our Machine Learning Model) and a Bubble Chart that compares Total Migrant Population and Life Expectancy at Birth by Country.
-
-![ezgif com-resize](https://user-images.githubusercontent.com/113153777/225465179-7e26e10a-2506-4f9a-b24d-6948f510abe9.gif)
-
----
-
 ## Results
 
 For this results discussion it will only be considered the models with country data, due to the following reasons:
@@ -200,11 +188,28 @@ Talking about the validation data the results clearly show that our model doesn'
 Still a 55-60% of accuracy is somewhat acceptable as we know that there is still a ton of adjustments we can do to our model and data to achieve a better result.
 
 ---
+## Dashboard
 
+In order to start working on the dashboard, we had to have our complete code and decide if it was better to analyze our data through a previous programming language, or to just present our outcomes. As we managed extended and comparative data, we decided to go for Tableau, since its visualization features are more suitable for the project. The [dashboard](https://public.tableau.com/app/profile/arantxa.meza/viz/Final_Project_V2_16789070562260/Final_Story) features three pages with the following visualizations:
+1. A world map that classifies countries by their Net Migration Rate.
+2. Graphs with data on Total Migrant Population by Country, as well as Migrant Population divided by Gender and Country.
+3. A line graph with data on each country's top 3 features (according to our Machine Learning Model) and a Bubble Chart that compares Total Migrant Population and Life Expectancy at Birth by Country.
 
+![ezgif com-resize](https://user-images.githubusercontent.com/113153777/225465179-7e26e10a-2506-4f9a-b24d-6948f510abe9.gif)
+
+---
+## Future Analysis
+
+The next stages of our project could be the following:
+1. Statistical Analysis: Leverage statistical indicators with R in order to find similar trends and components of negative migration countries.
+2. Model Re-training: Add new variables to our current MLM in order to find a more robust solution and a better validation vs real data.
+3. Logistic Regression Model: Calculate the probability of a country’s migration population to be positive or negative using a Logistic Regression.
+4. Time Series Model: Calculate the amount of migrants a given country will have in the year 202x.
+
+---
 ## Recommendations & Final Considerations
 
-For this analysis, we were limited by the availability of general country data. Also our main datasources and overall census provide data with a frequency of 5 years. If population data and migration data could be available in a bi-annual basis, our model could be more robust for validating our performance. If only 5 year data were to be available, we would focus on gathering more historic data in order to have more information from periods during social events (famines, pandemics, economic crashes, war). Also try to gather as much information from all the countries or at least the most important in a constant way, as this was a limitant for us during this project.
+For this analysis, we were limited by the availability of general country data. Also our main datasources and overall census provide data with a frequency of 5 years. If population data and migration data could be available in a bi-annual basis, our model could be more robust for validating our performance. If only 5 year data were to be available, we would focus on gathering more historic data in order to have more information from periods during social events (famines, pandemics, economic crashes, war). Also, we would try to gather as much information from all the countries or at least the most important in a constant way, as this was a limitant for us during this project.
 
 Another adjustment could be to gather more data to try on in our model, for example PIB, average cost of life or another indicator as to see if they can tell us more about the migration tendencies of the people. 
 
