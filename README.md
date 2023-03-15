@@ -190,14 +190,25 @@ For this results discussion it will only be considered the models with country d
 2. The information they require is more accesible and easier to gather (since it's general country data, instead of migration data).
 3. Their overall performance was better. 
 
-In the confussion Matrix we can see that there are far more true positives and true negatives than false values. The model predicted 131 true positives and failed in only 23, while it predicted 184 true negatives and failed 17 times, overall it is a great performance as most predictions were correct. This can be confirmed with the accuracy score as it is shown to be 0.8873 which is a great score as it tells that it correctly predicted 89 values of a 100. To make sure that the results were correct, the recall and precision are to be examined, so the classification report was constructed. In this case the f1 showed a high value, which tells there is a balance between recall and precision (0.9 for 0 and 0.87 for 1) and indeed the values for precision and recall for 0 and 1 were almost at the same level so the model can be describe to have both this features and not only one. One can trust that the model will predict the correct value and we can trust this prediction. 
+In the confussion Matrix we can see that there are far more true positives and true negatives than false values. The model predicted 131 true positives and failed in only 23, while it predicted 184 true negatives and failed 17 times, overall it is a great performance as most predictions were correct. This can be confirmed with the accuracy score as it is shown to be 0.8873 which is a great score as it tells that it correctly predicted 89 values of a 100. To make sure that the results were correct, the recall and precision are to be examined, so the classification report was constructed. In this case the f1 showed a high value, which tells there is a balance between recall and precision (0.9 for 0 and 0.87 for 1) and indeed the values for precision and recall for 0 and 1 were almost at the same level so the model can be describe to have both this features and not only one. One can trust that the model will predict the correct value and we can trust this prediction. The top 3 features with the most importance were "annual_growth_rate", "infant_mortality_rate" and "total_fertility_rate" but comparing with the other features there is not one that has a low importance that it does not matter. 
 
+The deep learning model gave a higher accuracy score of 0.966, which is a far better score that gives confidence on the model performance and also is not close to perfect meaning that it should not be overfitted. The tanh as the activation was perfect as it tells us that the data was not too complex to have to use relu and also the epochs quantity was just enough to train and not overfit. 
+
+Talking about the validation data the results clearly show that our model doesn't work as well when it comes to new data. We think that this may be due to one or more of the following reasons:
+1. The models need to be trained with consistent yearly data, as opposed to 5-year data. 
+2. The models need more data in order to be properly trained. 
+3. More variables need to be added in order to accurately predict Net Migration Rate. 
+4. Migration patterns changed drastically after the COVID Health Crisis, which is why the models are not as accurate for 2022. 
+
+Still a 55-60% of accuracy is somewhat acceptable as we know that there is still a ton of adjustments we can do to our model and data to achieve a better result.
 
 ---
 
 
 ## Recommendations & Final Considerations
 
-For this analysis, we were limited by the availability of general country data. Also our main datasources and overall census provide data with a frequency of 5 years. If population data and migration data could be available in a bi-annual basis, our model could be more robust for validating our performance. If only 5 year data were to be available, we would focus on gathering more histoic data in order to have more information from periods during social events (famines, pandemics, economic crashes, war).
+For this analysis, we were limited by the availability of general country data. Also our main datasources and overall census provide data with a frequency of 5 years. If population data and migration data could be available in a bi-annual basis, our model could be more robust for validating our performance. If only 5 year data were to be available, we would focus on gathering more histoic data in order to have more information from periods during social events (famines, pandemics, economic crashes, war). Also try to gather as much information from all the countries or at least the most important in a constant way, as this was a limitant for us during this project.
+
+Another adjustment could be to gather more data to try on in our model, for example PIB, average cost of life or another indicator as to see if they can tell us more about the migration tendencies of the people. 
 
 It is important to mention that recent events related to the COVID-19 pandemic, did in fact changed migration trends over the past 2 years with certain countries closing the borders and making it difficult for the transit of people.
