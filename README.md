@@ -201,7 +201,7 @@ Still a 55-60% of accuracy is somewhat acceptable as we know that there is still
 
 ## Recommendations & Final Considerations
 
-For this analysis, we were limited by the availability of general country data. Also our main datasources and overall census provide data with a frequency of 5 years. If population data and migration data could be available in a bi-annual basis, our model could be more robust for validating our performance. If only 5 year data were to be available, we would focus on gathering more histoic data in order to have more information from periods during social events (famines, pandemics, economic crashes, war). Also try to gather as much information from all the countries or at least the most important in a constant way, as this was a limitant for us during this project.
+For this analysis, we were limited by the availability of general country data. Also our main datasources and overall census provide data with a frequency of 5 years. If population data and migration data could be available in a bi-annual basis, our model could be more robust for validating our performance. If only 5 year data were to be available, we would focus on gathering more historic data in order to have more information from periods during social events (famines, pandemics, economic crashes, war). Also try to gather as much information from all the countries or at least the most important in a constant way, as this was a limitant for us during this project.
 
 Another adjustment could be to gather more data to try on in our model, for example PIB, average cost of life or another indicator as to see if they can tell us more about the migration tendencies of the people. 
 
