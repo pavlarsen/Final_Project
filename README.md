@@ -141,7 +141,7 @@ After finishing the previous steps, we were curious to see if these two models w
 
 ![Screenshot 2023-03-07 at 20 31 32](https://user-images.githubusercontent.com/114035736/223604566-f0d6ba93-45a9-4c7f-9b86-1e8248682ca9.png)
 
-**Accuracy Score** : 0.88**
+**Accuracy Score : 0.88**
 
 ![Screenshot 2023-03-07 at 20 33 07](https://user-images.githubusercontent.com/114035736/223604779-3375fb14-7b13-418a-b42c-129678fa4ae1.png)
 
